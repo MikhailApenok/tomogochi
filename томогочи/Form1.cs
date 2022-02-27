@@ -162,5 +162,10 @@ namespace томогочи
                 }
             }
         }
+
+        private void pbQueue1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

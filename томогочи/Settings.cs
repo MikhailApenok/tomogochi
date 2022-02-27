@@ -6,6 +6,14 @@ using System.Threading.Tasks;
 
 namespace томогочи
 {
+    enum Actions
+    {
+        Eat,
+        Sleep,
+        Game,
+        Clear
+    }
+
     class Settings
     {
         public static Scale eat;

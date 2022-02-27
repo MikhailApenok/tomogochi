@@ -52,12 +52,26 @@ namespace томогочи
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pbImage = new System.Windows.Forms.PictureBox();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
+            this.pbQueue1 = new System.Windows.Forms.PictureBox();
+            this.pbQueue2 = new System.Windows.Forms.PictureBox();
+            this.pbQueue3 = new System.Windows.Forms.PictureBox();
+            this.pbQueue4 = new System.Windows.Forms.PictureBox();
+            this.pbQueue5 = new System.Windows.Forms.PictureBox();
+            this.pbQueue6 = new System.Windows.Forms.PictureBox();
+            this.btnAction = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbQueue1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbQueue2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbQueue3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbQueue4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbQueue5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbQueue6)).BeginInit();
             this.SuspendLayout();
             // 
             // lblEatMax
@@ -278,12 +292,88 @@ namespace томогочи
             // 
             this.gameTimer.Tick += new System.EventHandler(this.gameTimer_Tick);
             // 
+            // pbQueue1
+            // 
+            this.pbQueue1.Location = new System.Drawing.Point(849, 152);
+            this.pbQueue1.Name = "pbQueue1";
+            this.pbQueue1.Size = new System.Drawing.Size(50, 50);
+            this.pbQueue1.TabIndex = 25;
+            this.pbQueue1.TabStop = false;
+            this.pbQueue1.Click += new System.EventHandler(this.pbQueue1_Click);
+            // 
+            // pbQueue2
+            // 
+            this.pbQueue2.Location = new System.Drawing.Point(849, 208);
+            this.pbQueue2.Name = "pbQueue2";
+            this.pbQueue2.Size = new System.Drawing.Size(50, 50);
+            this.pbQueue2.TabIndex = 26;
+            this.pbQueue2.TabStop = false;
+            // 
+            // pbQueue3
+            // 
+            this.pbQueue3.Location = new System.Drawing.Point(849, 264);
+            this.pbQueue3.Name = "pbQueue3";
+            this.pbQueue3.Size = new System.Drawing.Size(50, 50);
+            this.pbQueue3.TabIndex = 27;
+            this.pbQueue3.TabStop = false;
+            // 
+            // pbQueue4
+            // 
+            this.pbQueue4.Location = new System.Drawing.Point(849, 320);
+            this.pbQueue4.Name = "pbQueue4";
+            this.pbQueue4.Size = new System.Drawing.Size(50, 50);
+            this.pbQueue4.TabIndex = 28;
+            this.pbQueue4.TabStop = false;
+            // 
+            // pbQueue5
+            // 
+            this.pbQueue5.Location = new System.Drawing.Point(849, 367);
+            this.pbQueue5.Name = "pbQueue5";
+            this.pbQueue5.Size = new System.Drawing.Size(50, 50);
+            this.pbQueue5.TabIndex = 29;
+            this.pbQueue5.TabStop = false;
+            // 
+            // pbQueue6
+            // 
+            this.pbQueue6.Location = new System.Drawing.Point(849, 423);
+            this.pbQueue6.Name = "pbQueue6";
+            this.pbQueue6.Size = new System.Drawing.Size(50, 50);
+            this.pbQueue6.TabIndex = 30;
+            this.pbQueue6.TabStop = false;
+            // 
+            // btnAction
+            // 
+            this.btnAction.Location = new System.Drawing.Point(821, 497);
+            this.btnAction.Name = "btnAction";
+            this.btnAction.Size = new System.Drawing.Size(106, 49);
+            this.btnAction.TabIndex = 31;
+            this.btnAction.Text = "DO IT!";
+            this.btnAction.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(817, 103);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 24);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "ОЧЕРЕДЬ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.ClientSize = new System.Drawing.Size(800, 666);
+            this.ClientSize = new System.Drawing.Size(986, 666);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnAction);
+            this.Controls.Add(this.pbQueue6);
+            this.Controls.Add(this.pbQueue5);
+            this.Controls.Add(this.pbQueue4);
+            this.Controls.Add(this.pbQueue3);
+            this.Controls.Add(this.pbQueue2);
+            this.Controls.Add(this.pbQueue1);
             this.Controls.Add(this.lblGameOver);
             this.Controls.Add(this.btnSleep);
             this.Controls.Add(this.btnHappy);
@@ -314,6 +404,12 @@ namespace томогочи
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbQueue1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbQueue2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbQueue3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbQueue4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbQueue5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbQueue6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -343,6 +439,14 @@ namespace томогочи
         private System.Windows.Forms.Button btnSleep;
         private System.Windows.Forms.Label lblGameOver;
         private System.Windows.Forms.Timer gameTimer;
+        private System.Windows.Forms.PictureBox pbQueue1;
+        private System.Windows.Forms.PictureBox pbQueue2;
+        private System.Windows.Forms.PictureBox pbQueue3;
+        private System.Windows.Forms.PictureBox pbQueue4;
+        private System.Windows.Forms.PictureBox pbQueue5;
+        private System.Windows.Forms.PictureBox pbQueue6;
+        private System.Windows.Forms.Button btnAction;
+        private System.Windows.Forms.Label label1;
     }
 }
 
