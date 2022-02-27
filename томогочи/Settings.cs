@@ -16,6 +16,10 @@ namespace томогочи
         public static int sub;
         public static int add;
 
+        public static bool is_gameover;
+        public static int speed;
+        public static int default_sub;
+
         public Settings()
         {
             eat = new Scale(100, 100);
@@ -25,6 +29,10 @@ namespace томогочи
             hp = new Scale(100, 100);
             sub = 8;
             add = 15;
+
+            is_gameover = false;
+            speed = 2;
+            sub = 8;
         }
 
     }

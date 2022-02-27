@@ -29,6 +29,7 @@ namespace томогочи
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblEatMax = new System.Windows.Forms.Label();
             this.lblEatCur = new System.Windows.Forms.Label();
             this.lblSleepCur = new System.Windows.Forms.Label();
@@ -50,6 +51,7 @@ namespace томогочи
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pbImage = new System.Windows.Forms.PictureBox();
+            this.gameTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -164,9 +166,9 @@ namespace томогочи
             this.lblGameOver.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblGameOver.Location = new System.Drawing.Point(202, 622);
             this.lblGameOver.Name = "lblGameOver";
-            this.lblGameOver.Size = new System.Drawing.Size(66, 24);
+            this.lblGameOver.Size = new System.Drawing.Size(199, 24);
             this.lblGameOver.TabIndex = 24;
-            this.lblGameOver.Text = "label1";
+            this.lblGameOver.Text = "ОН УМЕР!!!!!!!!!!!!!!!!";
             // 
             // btnSleep
             // 
@@ -177,6 +179,7 @@ namespace томогочи
             this.btnSleep.Size = new System.Drawing.Size(115, 115);
             this.btnSleep.TabIndex = 23;
             this.btnSleep.UseVisualStyleBackColor = true;
+            this.btnSleep.Click += new System.EventHandler(this.btnSleep_Click);
             // 
             // btnHappy
             // 
@@ -187,6 +190,7 @@ namespace томогочи
             this.btnHappy.Size = new System.Drawing.Size(115, 115);
             this.btnHappy.TabIndex = 22;
             this.btnHappy.UseVisualStyleBackColor = true;
+            this.btnHappy.Click += new System.EventHandler(this.btnHappy_Click);
             // 
             // btnClear
             // 
@@ -197,6 +201,7 @@ namespace томогочи
             this.btnClear.Size = new System.Drawing.Size(115, 115);
             this.btnClear.TabIndex = 21;
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnEat
             // 
@@ -207,6 +212,7 @@ namespace томогочи
             this.btnEat.Size = new System.Drawing.Size(115, 115);
             this.btnEat.TabIndex = 20;
             this.btnEat.UseVisualStyleBackColor = true;
+            this.btnEat.Click += new System.EventHandler(this.btnEat_Click);
             // 
             // pictureBox10
             // 
@@ -267,6 +273,10 @@ namespace томогочи
             this.pbImage.Size = new System.Drawing.Size(411, 445);
             this.pbImage.TabIndex = 0;
             this.pbImage.TabStop = false;
+            // 
+            // gameTimer
+            // 
+            this.gameTimer.Tick += new System.EventHandler(this.gameTimer_Tick);
             // 
             // Form1
             // 
@@ -332,6 +342,7 @@ namespace томогочи
         private System.Windows.Forms.Button btnHappy;
         private System.Windows.Forms.Button btnSleep;
         private System.Windows.Forms.Label lblGameOver;
+        private System.Windows.Forms.Timer gameTimer;
     }
 }
 

@@ -26,7 +26,7 @@ namespace томогочи
             this.currect_value = currect_value;
             this.max_value = max_value;
         }
-        Scale add_value(int add_value)
+        public Scale add_value(int add_value)
         {
             currect_value += add_value;
             if (currect_value > max_value)
@@ -35,7 +35,7 @@ namespace томогочи
             }
             return this;
         }
-        Scale sub_value(int sub_value)
+        public Scale sub_value(int sub_value)
         {
             currect_value -= sub_value;
             if (currect_value < 0)
